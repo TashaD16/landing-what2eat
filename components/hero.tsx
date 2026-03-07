@@ -25,16 +25,10 @@ export default function Hero() {
 
           <div className="flex flex-col sm:flex-row gap-4 mb-8">
             <a
-              href="https://what2eat.com/login"
+              href="https://what2eat-zeta.vercel.app/"
               className={cn(buttonVariants({ size: "lg" }), "text-base px-8")}
             >
               {t.hero.ctaPrimary}
-            </a>
-            <a
-              href="https://what2eat.com/download"
-              className={cn(buttonVariants({ variant: "outline", size: "lg" }), "text-base px-8")}
-            >
-              {t.hero.ctaSecondary}
             </a>
           </div>
 

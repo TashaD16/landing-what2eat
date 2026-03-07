@@ -17,22 +17,13 @@ export default function CtaBanner() {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="https://what2eat.com/login"
+            href="https://what2eat-zeta.vercel.app/"
             className={cn(
               buttonVariants({ size: "lg" }),
               "bg-white text-primary hover:bg-green-50 text-base px-8 font-semibold"
             )}
           >
             {t.ctaBanner.ctaPrimary}
-          </a>
-          <a
-            href="https://what2eat.com/download"
-            className={cn(
-              buttonVariants({ variant: "outline", size: "lg" }),
-              "border-white text-white hover:bg-white/10 text-base px-8"
-            )}
-          >
-            {t.ctaBanner.ctaSecondary}
           </a>
         </div>
       </div>

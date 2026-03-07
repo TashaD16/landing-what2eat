@@ -3,7 +3,6 @@ import VideoBanner from "@/components/video-banner";
 import Hero from "@/components/hero";
 import ProofBar from "@/components/proof-bar";
 import Features from "@/components/features";
-import HowItWorks from "@/components/how-it-works";
 import Benefits from "@/components/benefits";
 import Pricing from "@/components/pricing";
 import CtaBanner from "@/components/cta-banner";
@@ -18,7 +17,6 @@ export default function Home() {
         <Hero />
         <ProofBar />
         <Features />
-        <HowItWorks />
         <Benefits />
         <Pricing />
         <CtaBanner />

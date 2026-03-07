@@ -62,7 +62,7 @@ export default function Nav() {
           <a href="https://what2eat.com/login" className="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-primary transition-colors">
             {t.nav.logIn}
           </a>
-          <a href="https://what2eat.com/login" className={buttonVariants({ size: "sm" })}>
+          <a href="https://what2eat-zeta.vercel.app/" className={buttonVariants({ size: "sm" })}>
             {t.nav.getStarted}
           </a>
         </div>
@@ -112,7 +112,7 @@ export default function Nav() {
               {lang === "en" ? "RU" : "EN"}
             </button>
           </div>
-          <a href="https://what2eat.com/login" className={cn(buttonVariants(), "w-full text-center")}>
+          <a href="https://what2eat-zeta.vercel.app/" className={cn(buttonVariants(), "w-full text-center")}>
             {t.nav.getStarted}
           </a>
         </div>

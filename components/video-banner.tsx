@@ -22,7 +22,7 @@ export default function VideoBanner() {
       <div className="absolute inset-0 bg-black/55" />
 
       {/* Content */}
-      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
+      <div className="relative z-10 text-center px-6 max-w-6xl mx-auto">
         <h2 className="font-[family-name:var(--font-sans)] text-4xl md:text-6xl font-black text-white leading-tight mb-6">
           {t.videoBanner.headline}
         </h2>

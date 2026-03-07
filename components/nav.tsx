@@ -59,9 +59,6 @@ export default function Nav() {
           >
             {lang === "en" ? "RU" : "EN"}
           </button>
-          <a href="https://what2eat.com/login" className="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-primary transition-colors">
-            {t.nav.logIn}
-          </a>
           <a href="https://what2eat-zeta.vercel.app/" className={buttonVariants({ size: "sm" })}>
             {t.nav.getStarted}
           </a>

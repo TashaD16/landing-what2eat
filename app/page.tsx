@@ -3,6 +3,7 @@ import VideoBanner from "@/components/video-banner";
 import Hero from "@/components/hero";
 import ProofBar from "@/components/proof-bar";
 import Features from "@/components/features";
+import TinderBanner from "@/components/tinder-banner";
 import Benefits from "@/components/benefits";
 import Pricing from "@/components/pricing";
 import CtaBanner from "@/components/cta-banner";
@@ -17,6 +18,7 @@ export default function Home() {
         <Hero />
         <ProofBar />
         <Features />
+        <TinderBanner />
         <Benefits />
         <Pricing />
         <CtaBanner />

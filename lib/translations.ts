@@ -56,6 +56,9 @@ export type Translation = {
       missing: string[];
     }[];
   };
+  tinderBanner: {
+    slogan: string;
+  };
   videoBanner: {
     eyebrow: string;
     headline: string;
@@ -183,6 +186,9 @@ export const translations: Record<Lang, Translation> = {
           missing: [],
         },
       ],
+    },
+    tinderBanner: {
+      slogan: "Swipe recipes like Tinder! Don't know what to cook? What2eat — your food match.",
     },
     videoBanner: {
       eyebrow: "See It in Action",
@@ -324,6 +330,9 @@ export const translations: Record<Lang, Translation> = {
           missing: [],
         },
       ],
+    },
+    tinderBanner: {
+      slogan: "Свайпай рецепты, как в Tinder! Не знаешь, что приготовить? What2eat — твой матч с едой.",
     },
     videoBanner: {
       eyebrow: "Смотрите в действии",

@@ -188,11 +188,11 @@ export const translations: Record<Lang, Translation> = {
       ],
     },
     tinderBanner: {
-      slogan: "Swipe recipes like Tinder! Don't know what to cook? What2eat — your food match.",
+      slogan: "Swipe recipes like Tinder!\nWhat2eat — your food match!",
     },
     videoBanner: {
       eyebrow: "See It in Action",
-      headline: "Don't know what to cook?\nSwipe recipes like Tinder!\nWhat2eat — your food match!",
+      headline: "Don't know what to eat? Take a photo of your fridge!",
       body: "Get personalized recipes based on the products in your fridge. Save time, money and reduce food waste with AI technology.",
       cta: "Start Cooking Free",
     },
@@ -332,11 +332,11 @@ export const translations: Record<Lang, Translation> = {
       ],
     },
     tinderBanner: {
-      slogan: "Свайпай рецепты, как в Tinder! Не знаешь, что приготовить? What2eat — твой матч с едой.",
+      slogan: "Свайпай рецепты, как в Tinder!\nWhat2eat — твой матч с едой!",
     },
     videoBanner: {
       eyebrow: "Смотрите в действии",
-      headline: "Не знаешь, что приготовить?\nСвайпай рецепты, как в Tinder!\nWhat2eat — твой матч с едой!",
+      headline: "Не знаешь что поесть? Сфотографируй холодильник!",
       body: "Получай персональные рецепты на основе продуктов в твоем холодильнике. Экономь время, деньги и сокращай отходы еды с помощью AI-технологий.",
       cta: "Начать бесплатно",
     },

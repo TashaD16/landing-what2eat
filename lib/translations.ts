@@ -192,7 +192,7 @@ export const translations: Record<Lang, Translation> = {
     },
     videoBanner: {
       eyebrow: "See It in Action",
-      headline: "Don't know what to eat? Take a photo of your fridge!",
+      headline: "Don't know what to cook?\nSwipe recipes like Tinder!\nWhat2eat — your food match!",
       body: "Get personalized recipes based on the products in your fridge. Save time, money and reduce food waste with AI technology.",
       cta: "Start Cooking Free",
     },
@@ -336,7 +336,7 @@ export const translations: Record<Lang, Translation> = {
     },
     videoBanner: {
       eyebrow: "Смотрите в действии",
-      headline: "Не знаешь что поесть? Сфотографируй холодильник!",
+      headline: "Не знаешь, что приготовить?\nСвайпай рецепты, как в Tinder!\nWhat2eat — твой матч с едой!",
       body: "Получай персональные рецепты на основе продуктов в твоем холодильнике. Экономь время, деньги и сокращай отходы еды с помощью AI-технологий.",
       cta: "Начать бесплатно",
     },

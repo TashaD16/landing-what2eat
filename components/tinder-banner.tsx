@@ -21,8 +21,10 @@ export default function TinderBanner() {
 
       {/* Slogan */}
       <div className="relative z-10 text-center px-6 max-w-3xl mx-auto">
-        <p className="font-[family-name:var(--font-nunito)] text-3xl md:text-5xl font-black text-white leading-tight drop-shadow-lg whitespace-pre-line">
-          {t.tinderBanner.slogan}
+        <p className="font-[family-name:var(--font-nunito)] text-3xl md:text-5xl font-black text-white leading-tight drop-shadow-lg">
+          {t.tinderBanner.slogan.split("\n").map((line, i) => (
+            <span key={i} className="block">{line}</span>
+          ))}
         </p>
       </div>
     </section>

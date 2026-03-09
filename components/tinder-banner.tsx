@@ -32,7 +32,7 @@ export default function TinderBanner() {
             ))}
           </h2>
           <a
-            href="https://what2eat.com/login"
+            href="https://what2eat-zeta.vercel.app/"
             className={cn(buttonVariants({ size: "lg" }), "text-base px-10 bg-white text-primary hover:bg-white/90")}
           >
             {t.tinderBanner.cta}

@@ -51,7 +51,7 @@ export default function Pricing() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <a
-                  href={featured[i] ? "https://what2eat.com/login" : "https://what2eat-zeta.vercel.app/"}
+                  href="https://what2eat-zeta.vercel.app/"
                   className={cn(
                     buttonVariants({ variant: featured[i] ? "default" : "outline" }),
                     "w-full text-center"

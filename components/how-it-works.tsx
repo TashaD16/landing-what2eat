@@ -31,7 +31,7 @@ export default function HowItWorks() {
                 i % 2 === 1 ? "md:flex-row-reverse" : ""
               }`}
             >
-              <div className={`flex-1 relative rounded-2xl overflow-hidden shadow-lg w-full ${i === 1 ? "aspect-square" : "aspect-video"}`}>
+              <div className="flex-1 relative rounded-2xl overflow-hidden shadow-lg aspect-video w-full">
                 {i === 1 ? (
                   <video
                     src="/0803sv-crop.mp4"

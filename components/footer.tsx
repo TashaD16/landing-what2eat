@@ -5,9 +5,9 @@ import { useLang } from "@/lib/lang-context";
 // Hrefs stay static; labels come from translations
 const footerHrefs = [
   ["#features", "#how-it-works", "#pricing", "https://what2eat.com/download"],
-  ["#", "#", "#", "#"],
-  ["#", "#", "#"],
-  ["#", "#", "#"],
+  ["https://what2eat.com/about", "https://what2eat.com/blog", "https://what2eat.com/careers", "https://what2eat.com/press"],
+  ["https://what2eat.com/help", "https://what2eat.com/contact", "https://status.what2eat.com"],
+  ["https://what2eat.com/privacy", "https://what2eat.com/terms", "https://what2eat.com/cookies"],
 ];
 
 const socialLinks = [

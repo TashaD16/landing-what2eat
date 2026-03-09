@@ -3,6 +3,7 @@ import VideoBanner from "@/components/video-banner";
 import Hero from "@/components/hero";
 import ProofBar from "@/components/proof-bar";
 import Features from "@/components/features";
+import HowItWorks from "@/components/how-it-works";
 import TinderBanner from "@/components/tinder-banner";
 import Benefits from "@/components/benefits";
 import Pricing from "@/components/pricing";
@@ -13,11 +14,12 @@ export default function Home() {
   return (
     <>
       <Nav />
-      <VideoBanner />
       <main>
+        <VideoBanner />
         <Hero />
         <ProofBar />
         <Features />
+        <HowItWorks />
         <TinderBanner />
         <Benefits />
         <Pricing />

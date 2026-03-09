@@ -30,12 +30,21 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://what2eat.com",
     siteName: "What2eat",
+    images: [
+      {
+        url: "https://what2eat.com/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "What2eat — Find Recipes for Ingredients You Have",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "What2eat — Find Recipes for Ingredients You Have",
     description:
       "What2eat matches recipes to ingredients you already have at home.",
+    images: ["https://what2eat.com/og-image.jpg"],
   },
 };
 

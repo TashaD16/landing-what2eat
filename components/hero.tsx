@@ -15,17 +15,16 @@ export default function Hero() {
           <p className="text-sm font-semibold text-orange uppercase tracking-widest mb-3">
             {t.hero.eyebrow}
           </p>
-          <h1 className="font-[family-name:var(--font-nunito)] text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white leading-tight mb-5">
-            {t.hero.headline1}{" "}
-            <span className="text-primary">{t.hero.headline2}</span>
-          </h1>
+          <p className="font-[family-name:var(--font-nunito)] text-2xl md:text-3xl font-extrabold text-gray-900 dark:text-white leading-snug mb-5">
+            {t.hero.tagline}
+          </p>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
             {t.hero.body}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mb-8">
             <a
-              href="https://what2eat-zeta.vercel.app/"
+              href="https://what2eat.com/login"
               className={cn(buttonVariants({ size: "lg" }), "text-base px-8")}
             >
               {t.hero.ctaPrimary}
@@ -35,13 +34,20 @@ export default function Hero() {
           {/* Trust bar */}
           <div className="flex items-center gap-3">
             <div className="flex -space-x-2">
-              {["A", "B", "C", "D"].map((l) => (
-                <div
-                  key={l}
-                  className="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-white text-xs font-bold ring-2 ring-white"
-                >
-                  {l}
-                </div>
+              {[
+                { src: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=64&q=80", alt: "Home cook" },
+                { src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=64&q=80", alt: "Home cook" },
+                { src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=64&q=80", alt: "Home cook" },
+                { src: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=64&q=80", alt: "Home cook" },
+              ].map((avatar) => (
+                <Image
+                  key={avatar.src}
+                  src={avatar.src}
+                  alt={avatar.alt}
+                  width={32}
+                  height={32}
+                  className="rounded-full ring-2 ring-white dark:ring-gray-900 object-cover"
+                />
               ))}
             </div>
             <p className="text-sm text-gray-600 dark:text-gray-400">

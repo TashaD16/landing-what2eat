@@ -10,8 +10,7 @@ export type Translation = {
   };
   hero: {
     eyebrow: string;
-    headline1: string;
-    headline2: string;
+    tagline: string;
     body: string;
     ctaPrimary: string;
     ctaSecondary: string;
@@ -58,6 +57,7 @@ export type Translation = {
   };
   tinderBanner: {
     slogan: string;
+    cta: string;
   };
   videoBanner: {
     eyebrow: string;
@@ -91,9 +91,8 @@ export const translations: Record<Lang, Translation> = {
     },
     hero: {
       eyebrow: "Recipe Discovery",
-      headline1: "Don't know what to eat?",
-      headline2: "Take a photo of your fridge!",
-      body: "Get personalized recipes based on the products in your fridge. Save time, money and reduce food waste with AI technology.",
+      tagline: "200,000+ recipes matched to what's already in your fridge.",
+      body: "Type your ingredients, scan a barcode, or snap a photo. We find what you can cook right now — and what needs just one extra item from the shops.",
       ctaPrimary: "Start Cooking Free",
       ctaSecondary: "Download the App",
       trustText: "home cooks already cooking smarter",
@@ -189,6 +188,7 @@ export const translations: Record<Lang, Translation> = {
     },
     tinderBanner: {
       slogan: "Swipe recipes like Tinder!\nWhat2eat — your food match!",
+      cta: "Find My Match",
     },
     videoBanner: {
       eyebrow: "See It in Action",
@@ -235,9 +235,8 @@ export const translations: Record<Lang, Translation> = {
     },
     hero: {
       eyebrow: "Поиск рецептов",
-      headline1: "Не знаешь что поесть?",
-      headline2: "Сфотографируй холодильник!",
-      body: "Получай персональные рецепты на основе продуктов в твоем холодильнике. Экономь время, деньги и сокращай отходы еды с помощью AI-технологий.",
+      tagline: "200 000+ рецептов, подобранных под то, что уже есть в вашем холодильнике.",
+      body: "Введите ингредиенты, отсканируйте штрихкод или сделайте фото. Мы покажем, что можно приготовить прямо сейчас — и что потребует одного дополнительного ингредиента.",
       ctaPrimary: "Начать готовить бесплатно",
       ctaSecondary: "Скачать приложение",
       trustText: "домашних поваров уже готовят умнее",
@@ -333,6 +332,7 @@ export const translations: Record<Lang, Translation> = {
     },
     tinderBanner: {
       slogan: "Свайпай рецепты, как в Tinder!\nWhat2eat — твой матч с едой!",
+      cta: "Найти мой матч",
     },
     videoBanner: {
       eyebrow: "Смотрите в действии",

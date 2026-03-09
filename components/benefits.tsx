@@ -1,14 +1,27 @@
 "use client";
 
+import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { useLang } from "@/lib/lang-context";
 
 const benefitIcons = ["🥦", "💰", "🌍", "🥗", "⏱️", "📱"];
 const testimonialData = [
-  { name: "Sarah K.", initials: "SK" },
-  { name: "Marcus T.", initials: "MT" },
-  { name: "Priya R.", initials: "PR" },
+  { name: "Sarah K.", avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=64&q=80" },
+  { name: "Marcus T.", avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=64&q=80" },
+  { name: "Priya R.", avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=64&q=80" },
 ];
+
+function Stars() {
+  return (
+    <div className="flex gap-0.5 mb-4" aria-label="5 out of 5 stars">
+      {Array.from({ length: 5 }).map((_, i) => (
+        <svg key={i} className="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+        </svg>
+      ))}
+    </div>
+  );
+}
 
 export default function Benefits() {
   const { t } = useLang();
@@ -46,11 +59,16 @@ export default function Benefits() {
           {t.benefits.testimonials.map((testimonial, i) => (
             <Card key={i} className="border border-gray-100 dark:border-gray-700 shadow-sm dark:bg-gray-800">
               <CardContent className="pt-6">
+                <Stars />
                 <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-6 italic">&ldquo;{testimonial.quote}&rdquo;</p>
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white text-sm font-bold">
-                    {testimonialData[i].initials}
-                  </div>
+                  <Image
+                    src={testimonialData[i].avatar}
+                    alt={testimonialData[i].name}
+                    width={40}
+                    height={40}
+                    className="rounded-full object-cover"
+                  />
                   <div>
                     <p className="font-semibold text-gray-900 dark:text-white text-sm">{testimonialData[i].name}</p>
                     <p className="text-gray-400 dark:text-gray-500 text-xs">{testimonial.role}</p>

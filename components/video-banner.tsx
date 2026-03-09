@@ -15,6 +15,7 @@ export default function VideoBanner() {
         muted
         loop
         playsInline
+        aria-hidden="true"
         className="absolute inset-0 w-full h-full object-cover"
       />
 
@@ -23,14 +24,14 @@ export default function VideoBanner() {
 
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-6xl mx-auto">
-        <h2 className="font-[family-name:var(--font-sans)] text-4xl md:text-6xl font-black text-white leading-tight mb-6">
+        <h1 className="font-[family-name:var(--font-sans)] text-4xl md:text-6xl font-black text-white leading-tight mb-6">
           {t.videoBanner.headline}
-        </h2>
+        </h1>
         <p className="text-gray-200 text-lg md:text-xl leading-relaxed mb-10 max-w-lg mx-auto">
           {t.videoBanner.body}
         </p>
         <a
-          href="https://what2eat-zeta.vercel.app/"
+          href="https://what2eat.com/login"
           className={cn(buttonVariants({ size: "lg" }), "text-base px-10")}
         >
           {t.videoBanner.cta}

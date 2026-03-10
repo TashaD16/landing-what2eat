@@ -125,7 +125,7 @@ export const translations: Record<Lang, Translation> = {
     },
     howItWorks: {
       eyebrow: "Deep Dive",
-      headline: "See What2eat in action",
+      headline: "See what2eat in action",
       steps: [
         {
           title: "Snap or type your ingredients",
@@ -145,7 +145,7 @@ export const translations: Record<Lang, Translation> = {
       ],
     },
     benefits: {
-      eyebrow: "Why What2eat",
+      eyebrow: "Why what2eat",
       headline: "Built for real kitchens",
       testimonialsHeadline: "What cooks are saying",
       items: [
@@ -157,9 +157,9 @@ export const translations: Record<Lang, Translation> = {
         { title: "Works Everywhere", description: "Web, iOS, and Android. Your ingredient list syncs across all your devices." },
       ],
       testimonials: [
-        { quote: "I used to throw away so much food every week. Since using What2eat, I've cut my grocery bill by almost £40 a month. It's brilliant.", role: "Home Cook" },
+        { quote: "I used to throw away so much food every week. Since using what2eat, I've cut my grocery bill by almost £40 a month. It's brilliant.", role: "Home Cook" },
         { quote: "The matching algorithm is scary good. It always finds something I actually want to eat with whatever random stuff is in my fridge.", role: "Meal Prep Enthusiast" },
-        { quote: "Two kids, a hectic schedule, and a picky eater — What2eat makes dinnertime so much less stressful. I recommend it to every parent.", role: "Busy Parent" },
+        { quote: "Two kids, a hectic schedule, and a picky eater — what2eat makes dinnertime so much less stressful. I recommend it to every parent.", role: "Busy Parent" },
       ],
     },
     pricing: {
@@ -187,7 +187,7 @@ export const translations: Record<Lang, Translation> = {
       ],
     },
     tinderBanner: {
-      slogan: "Swipe recipes like Tinder!\nWhat2eat — your food match!",
+      slogan: "Swipe recipes like Tinder!\nwhat2eat — your food match!",
       cta: "Find My Match",
     },
     videoBanner: {
@@ -198,7 +198,7 @@ export const translations: Record<Lang, Translation> = {
     },
     ctaBanner: {
       headline: "Stop wasting food. Start cooking smarter.",
-      body: "Join 50,000+ home cooks who use What2eat every day to make the most of what they have.",
+      body: "Join 50,000+ home cooks who use what2eat every day to make the most of what they have.",
       ctaPrimary: "Get Started — It's Free",
       ctaSecondary: "Download the App",
     },
@@ -269,7 +269,7 @@ export const translations: Record<Lang, Translation> = {
     },
     howItWorks: {
       eyebrow: "Подробнее",
-      headline: "Смотрите What2eat в действии",
+      headline: "Смотрите what2eat в действии",
       steps: [
         {
           title: "Отсканируйте или введите ингредиенты",
@@ -289,7 +289,7 @@ export const translations: Record<Lang, Translation> = {
       ],
     },
     benefits: {
-      eyebrow: "Почему What2eat",
+      eyebrow: "Почему what2eat",
       headline: "Создан для настоящих кухонь",
       testimonialsHeadline: "Что говорят пользователи",
       items: [
@@ -301,9 +301,9 @@ export const translations: Record<Lang, Translation> = {
         { title: "Работает везде", description: "Веб, iOS и Android. Ваш список ингредиентов синхронизируется на всех устройствах." },
       ],
       testimonials: [
-        { quote: "Раньше я каждую неделю выбрасывала так много еды. С тех пор как я использую What2eat, мои расходы на продукты сократились почти на 3 500 ₽ в месяц. Это потрясающе.", role: "Домашний повар" },
+        { quote: "Раньше я каждую неделю выбрасывала так много еды. С тех пор как я использую what2eat, мои расходы на продукты сократились почти на 3 500 ₽ в месяц. Это потрясающе.", role: "Домашний повар" },
         { quote: "Алгоритм подбора пугающе точен. Он всегда находит что-то, что я действительно хочу съесть из того, что случайно лежит в холодильнике.", role: "Любитель meal prep" },
-        { quote: "Двое детей, безумный график и привереда за столом — What2eat делает ужин намного менее стрессовым. Я рекомендую это каждому родителю.", role: "Занятой родитель" },
+        { quote: "Двое детей, безумный график и привереда за столом — what2eat делает ужин намного менее стрессовым. Я рекомендую это каждому родителю.", role: "Занятой родитель" },
       ],
     },
     pricing: {
@@ -331,7 +331,7 @@ export const translations: Record<Lang, Translation> = {
       ],
     },
     tinderBanner: {
-      slogan: "Свайпай рецепты, как в Tinder!\nWhat2eat — твой матч с едой!",
+      slogan: "Свайпай рецепты, как в Tinder!\nwhat2eat — твой матч с едой!",
       cta: "Найти мой матч",
     },
     videoBanner: {
@@ -342,7 +342,7 @@ export const translations: Record<Lang, Translation> = {
     },
     ctaBanner: {
       headline: "Перестаньте выбрасывать еду. Начните готовить умнее.",
-      body: "Присоединяйтесь к 50 000+ домашних поваров, которые используют What2eat каждый день, чтобы максимально использовать то, что у них есть.",
+      body: "Присоединяйтесь к 50 000+ домашних поваров, которые используют what2eat каждый день, чтобы максимально использовать то, что у них есть.",
       ctaPrimary: "Начать — это бесплатно",
       ctaSecondary: "Скачать приложение",
     },

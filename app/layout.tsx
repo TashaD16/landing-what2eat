@@ -17,33 +17,33 @@ const nunito = Nunito({
 
 export const metadata: Metadata = {
   title: {
-    default: "What2eat — Find Recipes for Ingredients You Have",
-    template: "%s | What2eat",
+    default: "what2eat — Find Recipes for Ingredients You Have",
+    template: "%s | what2eat",
   },
   description:
-    "What2eat matches recipes to ingredients you already have at home. Reduce food waste, save money, and eat delicious meals every night.",
+    "what2eat matches recipes to ingredients you already have at home. Reduce food waste, save money, and eat delicious meals every night.",
   keywords: ["recipe finder", "ingredient matching", "meal planning", "reduce food waste"],
   openGraph: {
-    title: "What2eat — Find Recipes for Ingredients You Have",
+    title: "what2eat — Find Recipes for Ingredients You Have",
     description:
-      "What2eat matches recipes to ingredients you already have at home.",
+      "what2eat matches recipes to ingredients you already have at home.",
     type: "website",
     url: "https://what2eat.com",
-    siteName: "What2eat",
+    siteName: "what2eat",
     images: [
       {
         url: "https://what2eat.com/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "What2eat — Find Recipes for Ingredients You Have",
+        alt: "what2eat — Find Recipes for Ingredients You Have",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "What2eat — Find Recipes for Ingredients You Have",
+    title: "what2eat — Find Recipes for Ingredients You Have",
     description:
-      "What2eat matches recipes to ingredients you already have at home.",
+      "what2eat matches recipes to ingredients you already have at home.",
     images: ["https://what2eat.com/og-image.jpg"],
   },
 };

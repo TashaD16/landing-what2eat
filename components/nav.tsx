@@ -27,7 +27,7 @@ export default function Nav() {
     >
       <div className="mx-auto max-w-6xl px-6 flex h-16 items-center justify-between">
         <a href="/" className="font-[family-name:var(--font-nunito)] text-2xl font-black text-primary">
-          What2eat
+          what2eat
         </a>
 
         {/* Desktop links */}

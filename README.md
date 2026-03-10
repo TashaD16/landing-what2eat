@@ -1,4 +1,4 @@
-# What2eat — Landing Page
+# what2eat — Landing Page
 
 Marketing landing page for [what2eat.com](https://what2eat.com) — a recipe discovery service that matches recipes to ingredients you already have.
 

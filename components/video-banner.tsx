@@ -31,7 +31,7 @@ export default function VideoBanner() {
           {t.videoBanner.body}
         </p>
         <a
-          href="https://what2eat-zeta.vercel.app/"
+          href="https://what2eat.com/login"
           className={cn(buttonVariants({ size: "lg" }), "text-base px-10")}
         >
           {t.videoBanner.cta}

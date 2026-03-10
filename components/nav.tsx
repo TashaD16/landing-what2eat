@@ -27,7 +27,7 @@ export default function Nav() {
     >
       <div className="mx-auto max-w-6xl px-6 flex h-16 items-center justify-between">
         <a href="/" className="font-[family-name:var(--font-nunito)] text-2xl font-black text-primary">
-          What2eat
+          what2eat
         </a>
 
         {/* Desktop links */}
@@ -59,7 +59,7 @@ export default function Nav() {
           >
             {lang === "en" ? "RU" : "EN"}
           </button>
-          <a href="https://what2eat-zeta.vercel.app/" className={buttonVariants({ size: "sm" })}>
+          <a href="https://what2eat.com/login" className={buttonVariants({ size: "sm" })}>
             {t.nav.getStarted}
           </a>
         </div>
@@ -109,7 +109,7 @@ export default function Nav() {
               {lang === "en" ? "RU" : "EN"}
             </button>
           </div>
-          <a href="https://what2eat-zeta.vercel.app/" className={cn(buttonVariants(), "w-full text-center")}>
+          <a href="https://what2eat.com/login" className={cn(buttonVariants(), "w-full text-center")}>
             {t.nav.getStarted}
           </a>
         </div>

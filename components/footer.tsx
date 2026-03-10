@@ -67,10 +67,10 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="font-[family-name:var(--font-nunito)] text-white text-lg font-extrabold">
-            What2eat
+            what2eat
           </p>
           <p className="text-xs text-gray-500">
-            © {new Date().getFullYear()} What2eat. {t.footer.copyright}
+            © {new Date().getFullYear()} what2eat. {t.footer.copyright}
           </p>
           <div className="flex items-center gap-4">
             {socialLinks.map((s) => (

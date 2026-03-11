@@ -3,6 +3,7 @@
 import { buttonVariants } from "@/lib/button-variants";
 import { cn } from "@/lib/utils";
 import { useLang } from "@/lib/lang-context";
+import { CTA_LOGIN } from "@/lib/constants";
 
 export default function CtaBanner() {
   const { t } = useLang();
@@ -17,7 +18,7 @@ export default function CtaBanner() {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="https://what2eat.com/login"
+            href={CTA_LOGIN}
             className={cn(
               buttonVariants({ size: "lg" }),
               "bg-white text-primary hover:bg-green-50 text-base px-8 font-semibold"

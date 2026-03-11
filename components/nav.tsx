@@ -5,6 +5,7 @@ import { buttonVariants } from "@/lib/button-variants";
 import { cn } from "@/lib/utils";
 import { useLang } from "@/lib/lang-context";
 import { useTheme } from "@/lib/theme-context";
+import { CTA_LOGIN } from "@/lib/constants";
 
 const SunIcon = () => (
   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -97,7 +98,7 @@ export default function Nav() {
           >
             {lang === "en" ? "RU" : "EN"}
           </button>
-          <a href="https://what2eat.com/login" className={buttonVariants({ size: "sm" })}>
+          <a href={CTA_LOGIN} className={buttonVariants({ size: "sm" })}>
             {t.nav.getStarted}
           </a>
         </div>
@@ -145,7 +146,7 @@ export default function Nav() {
               {lang === "en" ? "RU" : "EN"}
             </button>
           </div>
-          <a href="https://what2eat.com/login" onClick={close} className={cn(buttonVariants(), "w-full text-center")}>
+          <a href={CTA_LOGIN} onClick={close} className={cn(buttonVariants(), "w-full text-center")}>
             {t.nav.getStarted}
           </a>
         </div>

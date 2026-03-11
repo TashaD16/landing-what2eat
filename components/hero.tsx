@@ -4,6 +4,7 @@ import Image from "next/image";
 import { buttonVariants } from "@/lib/button-variants";
 import { cn } from "@/lib/utils";
 import { useLang } from "@/lib/lang-context";
+import { CTA_LOGIN } from "@/lib/constants";
 
 export default function Hero() {
   const { t } = useLang();
@@ -24,7 +25,7 @@ export default function Hero() {
 
           <div className="flex flex-col sm:flex-row gap-4 mb-8">
             <a
-              href="https://what2eat.com/login"
+              href={CTA_LOGIN}
               className={cn(buttonVariants({ size: "lg" }), "text-base px-8")}
             >
               {t.hero.ctaPrimary}

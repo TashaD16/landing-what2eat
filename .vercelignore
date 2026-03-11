@@ -1,0 +1,14 @@
+# Build artifacts
+.next/
+*.tsbuildinfo
+
+# Dev tools
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docs
+README.md

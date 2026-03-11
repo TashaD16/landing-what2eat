@@ -6,6 +6,7 @@ import { buttonVariants } from "@/lib/button-variants";
 import { Separator } from "@/components/ui/separator";
 import { cn } from "@/lib/utils";
 import { useLang } from "@/lib/lang-context";
+import { CTA_LOGIN } from "@/lib/constants";
 
 const prices = ["$0", "$5.99"];
 const featured = [false, true];
@@ -51,7 +52,7 @@ export default function Pricing() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <a
-                  href="https://what2eat.com/login"
+                  href={CTA_LOGIN}
                   className={cn(
                     buttonVariants({ variant: featured[i] ? "default" : "outline" }),
                     "w-full text-center"

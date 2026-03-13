@@ -4,11 +4,12 @@ import { useLang } from "@/lib/lang-context";
 import { CTA_DOWNLOAD } from "@/lib/constants";
 
 // Hrefs stay static; labels come from translations
+const APP_BASE = "https://what2eat-zeta.vercel.app";
 const footerHrefs = [
   ["#features", "#how-it-works", "#pricing", CTA_DOWNLOAD],
-  ["https://what2eat.com/about", "https://what2eat.com/blog", "https://what2eat.com/careers", "https://what2eat.com/press"],
-  ["https://what2eat.com/help", "https://what2eat.com/contact", "https://status.what2eat.com"],
-  ["https://what2eat.com/privacy", "https://what2eat.com/terms", "https://what2eat.com/cookies"],
+  [`${APP_BASE}/about`, `${APP_BASE}/blog`, `${APP_BASE}/careers`, `${APP_BASE}/press`],
+  [`${APP_BASE}/help`, `${APP_BASE}/contact`, APP_BASE],
+  [`${APP_BASE}/privacy`, `${APP_BASE}/terms`, `${APP_BASE}/cookies`],
 ];
 
 const socialLinks = [

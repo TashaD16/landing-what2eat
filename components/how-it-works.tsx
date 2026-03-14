@@ -2,9 +2,6 @@
 
 import Image from "next/image";
 import { useLang } from "@/lib/lang-context";
-import { APP_DEMO_URL, APP_GITHUB_URL } from "@/lib/constants";
-import { buttonVariants } from "@/lib/button-variants";
-import { cn } from "@/lib/utils";
 
 // Step 1: fridge/camera — what you photograph. Step 2: video (swipe). Step 3: planner/shopping.
 const images = [
@@ -28,24 +25,6 @@ export default function HowItWorks() {
           <p className="mt-3 text-gray-500 dark:text-gray-400 max-w-xl mx-auto">
             {t.howItWorks.subtitle}
           </p>
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-            <a
-              href={APP_DEMO_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={cn(buttonVariants({ size: "lg" }), "text-base px-8")}
-            >
-              {t.howItWorks.tryAppCta} →
-            </a>
-            <a
-              href={APP_GITHUB_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm font-medium text-primary hover:underline"
-            >
-              {t.howItWorks.githubLink}
-            </a>
-          </div>
         </div>
 
         <div className="flex flex-col gap-20">

@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/lib/button-variants";
@@ -8,11 +9,12 @@ import { cn } from "@/lib/utils";
 import { useLang } from "@/lib/lang-context";
 import { CTA_LOGIN } from "@/lib/constants";
 
-const prices = ["$0", "$5.99"];
 const featured = [false, true];
 
 export default function Pricing() {
   const { t } = useLang();
+  const [yearly, setYearly] = useState(false);
+
   return (
     <section id="pricing" className="py-24 bg-gray-50 dark:bg-gray-800">
       <div className="mx-auto max-w-6xl px-6">
@@ -24,9 +26,36 @@ export default function Pricing() {
           <p className="mt-4 text-gray-500 dark:text-gray-400 max-w-md mx-auto">
             {t.pricing.subheadline}
           </p>
+
+          {/* Billing toggle */}
+          <div className="mt-8 inline-flex items-center gap-1 rounded-full bg-gray-200 dark:bg-gray-700 p-1">
+            <button
+              onClick={() => setYearly(false)}
+              className={cn(
+                "rounded-full px-5 py-1.5 text-sm font-medium transition-colors",
+                !yearly
+                  ? "bg-primary text-white shadow"
+                  : "text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"
+              )}
+            >
+              {t.pricing.billing.monthly}
+            </button>
+            <button
+              onClick={() => setYearly(true)}
+              className={cn(
+                "flex items-center gap-2 rounded-full px-5 py-1.5 text-sm font-medium transition-colors",
+                yearly
+                  ? "bg-primary text-white shadow"
+                  : "text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"
+              )}
+            >
+              {t.pricing.billing.yearly}
+              <Badge className="bg-orange text-white text-xs px-2 py-0.5">{t.pricing.billing.save}</Badge>
+            </button>
+          </div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {t.pricing.plans.map((plan, i) => (
             <Card
               key={i}
@@ -45,8 +74,10 @@ export default function Pricing() {
               <CardHeader className="pb-4">
                 <h3 className="font-[family-name:var(--font-nunito)] text-xl font-extrabold text-gray-900 dark:text-white">{plan.name}</h3>
                 <div className="flex items-baseline gap-1 mt-2">
-                  <span className="font-[family-name:var(--font-nunito)] text-4xl font-black text-gray-900 dark:text-white">{prices[i]}</span>
-                  <span className="text-gray-400 dark:text-gray-500 text-sm">/ {plan.period}</span>
+                  <span className="font-[family-name:var(--font-nunito)] text-4xl font-black text-gray-900 dark:text-white">
+                    {yearly ? plan.yearlyPrice : plan.monthlyPrice}
+                  </span>
+                  <span className="text-gray-400 dark:text-gray-500 text-sm">/ {yearly ? plan.periodYearly : plan.periodMonthly}</span>
                 </div>
                 <p className="text-gray-500 dark:text-gray-400 text-sm">{plan.description}</p>
               </CardHeader>

@@ -32,6 +32,9 @@ export type Translation = {
   howItWorks: {
     eyebrow: string;
     headline: string;
+    subtitle: string;
+    tryAppCta: string;
+    githubLink: string;
     steps: { title: string; description: string; alt: string }[];
   };
   benefits: {
@@ -132,21 +135,24 @@ export const translations: Record<Lang, Translation> = {
     howItWorks: {
       eyebrow: "Deep Dive",
       headline: "See what2eat in action",
+      subtitle: "Meal planning from your ingredients and fridge photo — try the live app below.",
+      tryAppCta: "Try the app",
+      githubLink: "Source code",
       steps: [
         {
-          title: "AI Recognises Your Ingredients",
-          description: "Open the camera and photograph your fridge or pantry. The AI identifies everything in seconds. Or add manually using the ingredient catalog with category tabs.",
-          alt: "Person pointing phone at open fridge",
+          title: "Snap Your Fridge or Pick Ingredients",
+          description: "Tap the big blue button and photograph your fridge — the AI detects ingredients automatically. Or choose ingredients manually by category: meat, grains, vegetables, dairy, spices.",
+          alt: "App screen: camera or ingredient list from what2eat",
         },
         {
-          title: "Swipe Through Recipe Cards",
-          description: "Browse your personalised recipe deck — swipe right to save, left to skip. Filter by cuisine: Russian, Italian, Asian, Georgian, and more. Premium unlocks time and complexity filters.",
-          alt: "Recipe card deck on phone screen",
+          title: "Swipe Recipe Cards & Find Dishes",
+          description: "Get personalised dish suggestions. Swipe through recipe cards, use filters: vegetarian, vegan, budget. Tap «Find dishes» or «Random» when you can't decide.",
+          alt: "App screen: recipe cards and filters in what2eat",
         },
         {
-          title: "Plan the Week & Shop Smart",
-          description: "Drag liked dishes onto the weekly planner. The app generates a unified shopping list — only the items you don't already have.",
-          alt: "Weekly meal planner on tablet screen",
+          title: "Plan Meals & Shopping List",
+          description: "Add liked dishes to your plan. The app builds a shopping list with only what you're missing — no duplicate buys.",
+          alt: "App screen: weekly planner and shopping list in what2eat",
         },
       ],
     },
@@ -314,21 +320,24 @@ export const translations: Record<Lang, Translation> = {
     howItWorks: {
       eyebrow: "Подробнее",
       headline: "Смотрите what2eat в действии",
+      subtitle: "ЧтоЕсть — планирование приёмов пищи по ингредиентам и фото холодильника.",
+      tryAppCta: "Попробовать приложение",
+      githubLink: "Исходный код",
       steps: [
         {
-          title: "ИИ находит ингредиенты",
-          description: "Откройте камеру и сфотографируйте холодильник или кладовую. ИИ определит всё за секунды. Или добавляйте вручную через каталог ингредиентов с вкладками по категориям.",
-          alt: "Человек направляет телефон на открытый холодильник",
+          title: "Сфоткай холодильник или выбери ингредиенты",
+          description: "Нажми на большую синюю кнопку и сфотографируй продукты — ИИ сам определит ингредиенты. Или выбери ингредиенты вручную: мясо, крупы, овощи, молочное, специи.",
+          alt: "Экран приложения: камера или список ингредиентов what2eat",
         },
         {
-          title: "Свайпайте карточки рецептов",
-          description: "Листайте персональную колоду рецептов — свайп вправо чтобы сохранить, влево чтобы пропустить. Фильтруйте по кухне: русская, итальянская, азиатская, грузинская и другие. В Premium доступны фильтры по времени и сложности.",
-          alt: "Колода карточек рецептов на экране телефона",
+          title: "Свайпай карточки и находи блюда",
+          description: "Получай подборку блюд под свои продукты. Листай карточки рецептов, ставь фильтры: вегетарианское, веган, бюджет. Кнопки «Найти блюда» и «Случайное» — когда не можешь определиться.",
+          alt: "Экран приложения: карточки рецептов и фильтры what2eat",
         },
         {
-          title: "Планируйте неделю и закупайтесь умно",
-          description: "Перетаскивайте понравившиеся блюда в планировщик на неделю. Приложение формирует единый список покупок — только то, чего у вас ещё нет.",
-          alt: "Планировщик питания на неделю на экране планшета",
+          title: "Планируй приёмы пищи и список покупок",
+          description: "Добавляй понравившиеся блюда в план. Приложение соберёт список покупок — только то, чего ещё нет дома.",
+          alt: "Экран приложения: планировщик и список покупок what2eat",
         },
       ],
     },

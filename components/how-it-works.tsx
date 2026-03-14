@@ -2,11 +2,15 @@
 
 import Image from "next/image";
 import { useLang } from "@/lib/lang-context";
+import { APP_DEMO_URL, APP_GITHUB_URL } from "@/lib/constants";
+import { buttonVariants } from "@/lib/button-variants";
+import { cn } from "@/lib/utils";
 
+// Step 1: fridge/camera — what you photograph. Step 2: video (swipe). Step 3: planner/shopping.
 const images = [
-  "https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=700&q=80",
-  "https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=700&q=80",
-  "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=700&q=80",
+  "https://images.unsplash.com/photo-1584568694245-d8783759d468?w=800&q=80",
+  null,
+  "https://images.unsplash.com/photo-1507048331197-7d4ac70811cf?w=800&q=80",
 ];
 
 const numbers = ["01", "02", "03"];
@@ -21,6 +25,27 @@ export default function HowItWorks() {
           <h2 className="font-[family-name:var(--font-nunito)] text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white">
             {t.howItWorks.headline}
           </h2>
+          <p className="mt-3 text-gray-500 dark:text-gray-400 max-w-xl mx-auto">
+            {t.howItWorks.subtitle}
+          </p>
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+            <a
+              href={APP_DEMO_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={cn(buttonVariants({ size: "lg" }), "text-base px-8")}
+            >
+              {t.howItWorks.tryAppCta} →
+            </a>
+            <a
+              href={APP_GITHUB_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-medium text-primary hover:underline"
+            >
+              {t.howItWorks.githubLink}
+            </a>
+          </div>
         </div>
 
         <div className="flex flex-col gap-20">
@@ -31,7 +56,7 @@ export default function HowItWorks() {
                 i % 2 === 1 ? "md:flex-row-reverse" : ""
               }`}
             >
-              <div className="flex-1 relative rounded-2xl overflow-hidden shadow-lg aspect-video w-full">
+              <div className="flex-1 relative rounded-2xl overflow-hidden shadow-lg aspect-video w-full bg-gray-200 dark:bg-gray-700">
                 {i === 1 ? (
                   <video
                     src="/0803sv-crop.mp4"
@@ -43,7 +68,7 @@ export default function HowItWorks() {
                   />
                 ) : (
                   <Image
-                    src={images[i]}
+                    src={images[i]!}
                     alt={step.alt}
                     fill
                     className="object-cover"

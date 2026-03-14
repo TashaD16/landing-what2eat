@@ -35,7 +35,16 @@ export default function HowItWorks() {
               }`}
             >
               <div className="flex-1 relative rounded-2xl overflow-hidden shadow-lg aspect-video w-full bg-gray-200 dark:bg-gray-700">
-                {i === 1 ? (
+                {i === 0 ? (
+                  <video
+                    src="/0315.mp4"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full h-full object-cover"
+                  />
+                ) : i === 1 ? (
                   <video
                     src="/swipe1.mp4"
                     autoPlay

@@ -5,7 +5,7 @@ import { useLang } from "@/lib/lang-context";
 
 const images = [
   "https://images.unsplash.com/photo-1584568694245-d8783759d468?w=800&q=80",
-  "https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=800&q=80",
+  null,
   "https://images.unsplash.com/photo-1507048331197-7d4ac70811cf?w=800&q=80",
 ];
 
@@ -35,12 +35,23 @@ export default function HowItWorks() {
               }`}
             >
               <div className="flex-1 relative rounded-2xl overflow-hidden shadow-lg aspect-video w-full bg-gray-200 dark:bg-gray-700">
-                <Image
-                  src={images[i]}
-                  alt={step.alt}
-                  fill
-                  className="object-cover"
-                />
+                {i === 1 ? (
+                  <video
+                    src="/swipe1.mp4"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  <Image
+                    src={images[i]!}
+                    alt={step.alt}
+                    fill
+                    className="object-cover"
+                  />
+                )}
               </div>
 
               <div className="flex-1">

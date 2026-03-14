@@ -4,7 +4,6 @@ import Hero from "@/components/hero";
 import ProofBar from "@/components/proof-bar";
 import Features from "@/components/features";
 import HowItWorks from "@/components/how-it-works";
-import TinderBanner from "@/components/tinder-banner";
 import Benefits from "@/components/benefits";
 import Pricing from "@/components/pricing";
 import Footer from "@/components/footer";
@@ -19,7 +18,6 @@ export default function Home() {
         <ProofBar />
         <Features />
         <HowItWorks />
-        <TinderBanner />
         <Benefits />
         <Pricing />
       </main>

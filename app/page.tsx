@@ -7,7 +7,6 @@ import HowItWorks from "@/components/how-it-works";
 import TinderBanner from "@/components/tinder-banner";
 import Benefits from "@/components/benefits";
 import Pricing from "@/components/pricing";
-import CtaBanner from "@/components/cta-banner";
 import Footer from "@/components/footer";
 
 export default function Home() {
@@ -23,7 +22,6 @@ export default function Home() {
         <TinderBanner />
         <Benefits />
         <Pricing />
-        <CtaBanner />
       </main>
       <Footer />
     </>

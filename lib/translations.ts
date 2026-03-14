@@ -77,7 +77,7 @@ export type Translation = {
   };
   footer: {
     copyright: string;
-    about: { heading: string; text: string };
+    brandTagline: string;
     support: { heading: string; email: string; placeholder: string; send: string };
     groups: {
       heading: string;
@@ -248,11 +248,8 @@ export const translations: Record<Lang, Translation> = {
       ctaSecondary: "Download the App",
     },
     footer: {
-      copyright: "All rights reserved.",
-      about: {
-        heading: "About",
-        text: "what2eat is an AI meal planner for families and couples. Snap your fridge, swipe recipe cards, and plan your week — smart shopping list included. 8 cuisines, weekly planner, and free to start.",
-      },
+      copyright: "All rights reserved. · AI Meal Planner",
+      brandTagline: "AI-powered meal planning — snap your fridge, swipe recipes, plan your week.",
       support: {
         heading: "Support",
         email: "support@w2e.com",
@@ -433,11 +430,8 @@ export const translations: Record<Lang, Translation> = {
       ctaSecondary: "Скачать приложение",
     },
     footer: {
-      copyright: "Все права защищены.",
-      about: {
-        heading: "О приложении",
-        text: "what2eat — ИИ-планировщик питания для семей и пар. Сфотографируй холодильник, свайпай рецепты и планируй неделю — умный список покупок в комплекте. 8 кухонь мира, планировщик на неделю, бесплатный старт.",
-      },
+      copyright: "Все права защищены. · ИИ-планировщик питания",
+      brandTagline: "ИИ-планировщик питания — фото холодильника, свайп рецептов, план на неделю.",
       support: {
         heading: "Поддержка",
         email: "support@w2e.com",

@@ -82,8 +82,10 @@ export default function Footer() {
             <h4 className="font-[family-name:var(--font-nunito)] text-white font-bold mb-4">{legalGroup.heading}</h4>
             <ul className="space-y-2">
               {legalGroup.links.map((link, li) => (
-                <li key={li} className="text-sm">
-                  {link.label}
+                <li key={li}>
+                  <a href={legalHrefs[li]} className="text-sm hover:text-white transition-colors">
+                    {link.label}
+                  </a>
                 </li>
               ))}
             </ul>

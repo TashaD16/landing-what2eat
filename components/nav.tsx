@@ -26,7 +26,7 @@ export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const { lang, setLang, t } = useLang();
-  const { theme, toggleTheme } = useTheme();
+  const { theme, toggleTheme, accentColor, toggleAccent } = useTheme();
   const navRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -93,6 +93,17 @@ export default function Nav() {
             {theme === "dark" ? <SunIcon /> : <MoonIcon />}
           </button>
           <button
+            onClick={toggleAccent}
+            aria-label="Toggle accent color"
+            title={accentColor === "green" ? "Switch to orange" : "Switch to green"}
+            className="p-1.5 rounded hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+          >
+            <span
+              className="block w-4 h-4 rounded-full border-2 border-white dark:border-gray-700 shadow-sm"
+              style={{ backgroundColor: accentColor === "green" ? "#F4700F" : "#2E7D32" }}
+            />
+          </button>
+          <button
             onClick={() => setLang(lang === "en" ? "ru" : "en")}
             className="text-sm font-semibold text-primary border border-primary rounded px-2 py-0.5"
           >
@@ -138,6 +149,17 @@ export default function Nav() {
               className="p-1.5 rounded text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
             >
               {theme === "dark" ? <SunIcon /> : <MoonIcon />}
+            </button>
+            <button
+              onClick={toggleAccent}
+              aria-label="Toggle accent color"
+              title={accentColor === "green" ? "Switch to orange" : "Switch to green"}
+              className="p-1.5 rounded hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+            >
+              <span
+                className="block w-4 h-4 rounded-full border-2 border-white dark:border-gray-700 shadow-sm"
+                style={{ backgroundColor: accentColor === "green" ? "#F4700F" : "#2E7D32" }}
+              />
             </button>
             <button
               onClick={() => setLang(lang === "en" ? "ru" : "en")}

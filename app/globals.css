@@ -136,3 +136,14 @@
 .dark .text-orange {
   color: #ff8c3a;
 }
+
+/* Orange accent — toggled via .orange class on <html> */
+.orange {
+  --primary: oklch(0.62 0.19 50);
+  --ring: oklch(0.62 0.19 50);
+}
+
+.dark.orange {
+  --primary: oklch(0.72 0.18 52);
+  --ring: oklch(0.72 0.18 52);
+}

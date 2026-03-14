@@ -77,6 +77,8 @@ export type Translation = {
   };
   footer: {
     copyright: string;
+    about: { heading: string; text: string };
+    support: { heading: string; email: string; placeholder: string; send: string };
     groups: {
       heading: string;
       links: { label: string }[];
@@ -247,18 +249,20 @@ export const translations: Record<Lang, Translation> = {
     },
     footer: {
       copyright: "All rights reserved.",
+      about: {
+        heading: "About",
+        text: "what2eat is an AI meal planner for families and couples. Snap your fridge, swipe recipe cards, and plan your week — smart shopping list included. 8 cuisines, weekly planner, and free to start.",
+      },
+      support: {
+        heading: "Support",
+        email: "support@w2e.com",
+        placeholder: "Your message...",
+        send: "Send",
+      },
       groups: [
         {
           heading: "Product",
           links: [{ label: "Features" }, { label: "How It Works" }, { label: "Pricing" }, { label: "Download App" }],
-        },
-        {
-          heading: "Company",
-          links: [{ label: "About Us" }, { label: "Blog" }, { label: "Careers" }, { label: "Press" }],
-        },
-        {
-          heading: "Support",
-          links: [{ label: "Help Centre" }, { label: "Contact Us" }, { label: "Status" }],
         },
         {
           heading: "Legal",
@@ -430,18 +434,20 @@ export const translations: Record<Lang, Translation> = {
     },
     footer: {
       copyright: "Все права защищены.",
+      about: {
+        heading: "О приложении",
+        text: "what2eat — ИИ-планировщик питания для семей и пар. Сфотографируй холодильник, свайпай рецепты и планируй неделю — умный список покупок в комплекте. 8 кухонь мира, планировщик на неделю, бесплатный старт.",
+      },
+      support: {
+        heading: "Поддержка",
+        email: "support@w2e.com",
+        placeholder: "Ваше сообщение...",
+        send: "Отправить",
+      },
       groups: [
         {
           heading: "Продукт",
           links: [{ label: "Возможности" }, { label: "Как это работает" }, { label: "Цены" }, { label: "Скачать приложение" }],
-        },
-        {
-          heading: "Компания",
-          links: [{ label: "О нас" }, { label: "Блог" }, { label: "Вакансии" }, { label: "Пресса" }],
-        },
-        {
-          heading: "Поддержка",
-          links: [{ label: "Справочный центр" }, { label: "Связаться с нами" }, { label: "Статус" }],
         },
         {
           heading: "Юридическое",

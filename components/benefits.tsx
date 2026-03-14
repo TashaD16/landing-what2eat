@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { useLang } from "@/lib/lang-context";
 
-const benefitIcons = ["🥦", "💰", "🌍", "🥗", "⏱️", "📱"];
+const benefitIcons = ["📷", "🃏", "📅", "🛒", "🎲", "🆓"];
 const testimonialData = [
   { name: "Sarah K.", avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=64&q=80" },
   { name: "Marcus T.", avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=64&q=80" },

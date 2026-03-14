@@ -3,10 +3,10 @@
 import { useLang } from "@/lib/lang-context";
 
 const stats = [
-  { value: "50K+", key: "activeCooks" as const },
-  { value: "200K+", key: "recipesMatched" as const },
-  { value: "30%", key: "lessFoodWaste" as const },
-  { value: "4.8★", key: "appStoreRating" as const },
+  { value: "78+", key: "activeCooks" as const },
+  { value: "8", key: "recipesMatched" as const },
+  { value: "3", key: "lessFoodWaste" as const },
+  { value: "Free", key: "appStoreRating" as const },
 ];
 
 export default function ProofBar() {

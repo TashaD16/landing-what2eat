@@ -52,7 +52,7 @@ export default function Hero() {
               ))}
             </div>
             <p className="text-sm text-gray-600 dark:text-gray-400">
-              <span className="font-semibold text-gray-900 dark:text-white">50,000+</span> {t.hero.trustText}
+              {t.hero.trustText}
             </p>
           </div>
         </div>

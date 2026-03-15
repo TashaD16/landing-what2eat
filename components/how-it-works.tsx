@@ -48,7 +48,7 @@ export default function HowItWorks() {
                   />
                 ) : (
                   <video
-                    src="/0315 (2).mp4"
+                    src="/0316.mp4"
                     autoPlay
                     loop
                     muted

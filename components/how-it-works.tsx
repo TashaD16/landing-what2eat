@@ -1,13 +1,6 @@
 "use client";
 
-import Image from "next/image";
 import { useLang } from "@/lib/lang-context";
-
-const images = [
-  "https://images.unsplash.com/photo-1584568694245-d8783759d468?w=800&q=80",
-  null,
-  "https://images.unsplash.com/photo-1507048331197-7d4ac70811cf?w=800&q=80",
-];
 
 const numbers = ["01", "02", "03"];
 
@@ -54,11 +47,13 @@ export default function HowItWorks() {
                     className="w-full h-full object-cover"
                   />
                 ) : (
-                  <Image
-                    src={images[i]!}
-                    alt={step.alt}
-                    fill
-                    className="object-cover"
+                  <video
+                    src="/0315 (2).mp4"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full h-full object-cover"
                   />
                 )}
               </div>

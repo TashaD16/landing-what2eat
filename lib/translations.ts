@@ -158,7 +158,7 @@ export const translations: Record<Lang, Translation> = {
     },
     benefits: {
       eyebrow: "Why what2eat",
-      headline: "Built for real kitchens",
+      headline: "No more 'what's for dinner?' moments",
       testimonialsHeadline: "What cooks are saying",
       items: [
         { title: "AI Photo Recognition", description: "Point your camera at the fridge and let AI detect all ingredients instantly. No typing needed." },
@@ -238,7 +238,7 @@ export const translations: Record<Lang, Translation> = {
       ],
     },
     tinderBanner: {
-      slogan: "Swipe recipes like Tinder!\nwhat2eat — your food match!",
+      slogan: "Right swipe for dinner. Left swipe for 'not tonight'.\nwhat2eat — your food match!",
       cta: "Find My Match",
     },
     videoBanner: {
@@ -343,7 +343,7 @@ export const translations: Record<Lang, Translation> = {
     },
     benefits: {
       eyebrow: "Почему what2eat",
-      headline: "Создан для настоящих кухонь",
+      headline: "Больше никаких 'что бы приготовить?'",
       testimonialsHeadline: "Что говорят пользователи",
       items: [
         { title: "Распознавание фото ИИ", description: "Направьте камеру на холодильник — ИИ мгновенно найдёт все ингредиенты. Никакого ввода вручную." },
@@ -423,7 +423,7 @@ export const translations: Record<Lang, Translation> = {
       ],
     },
     tinderBanner: {
-      slogan: "Свайпай рецепты, как в Tinder!\nwhat2eat — твой матч с едой!",
+      slogan: "Свайп вправо — готовим. Влево — не сегодня.\nwhat2eat — твой матч с едой!",
       cta: "Найти мой матч",
     },
     videoBanner: {
